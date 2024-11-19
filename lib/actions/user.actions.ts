@@ -6,6 +6,7 @@ import { parseStringify } from '../utils';
 import { cookies } from 'next/headers';
 import { placeHolder } from '@/constants';
 import { redirect } from 'next/navigation';
+
 const getUserByEmail = async (email: string) => {
   const { databases } = await createAdminClient();
   const result = await databases.listDocuments(
