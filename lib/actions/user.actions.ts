@@ -1,8 +1,9 @@
 'use server';
+
 import { createAdminClient, createSessionClient } from '@/lib/appwrite';
 import { appwriteConfig } from '@/lib/appwrite/config';
 import { Query, ID } from 'node-appwrite';
-import { parseStringify } from '../utils';
+import { parseStringify } from '@/lib/utils';
 import { cookies } from 'next/headers';
 import { placeHolder } from '@/constants';
 import { redirect } from 'next/navigation';
